@@ -9,8 +9,8 @@ const FriendListItem = styled.li`
   display: flex;
   align-items: center;
   padding: 5px 15px;
-  width: 350px;
-  height: 70px;
+  width: 280px;
+  height: 65px;
   gap: 20px;
   background-color: ${props => props.theme.colors.white};
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -20,18 +20,26 @@ const FriendListItem = styled.li`
   ::after {
     content: '';
     position: absolute;
-    left: 49px;
+    left: 51px;
     top: 10px;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
 
     background-color: ${props => props.theme.colors.secondatyText};
 
-    border-radius: 5px;
+    border-radius: 6px;
   }
 
   :not(:last-child) {
     margin-bottom: 10px;
+  }
+
+  transition: background-color 150ms ease-in, transform 150ms ease-in;
+  :hover {
+    cursor: pointer;
+    background-color: ${props => props.theme.colors.secondatyText};
+
+    transform: scale(1.03);
   }
 `;
 

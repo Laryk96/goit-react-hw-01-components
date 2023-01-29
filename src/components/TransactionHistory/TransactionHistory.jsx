@@ -8,6 +8,7 @@ import {
   HeaderColumn,
   HeaderLine,
   TransactionValue,
+  TransactionLine,
 } from './TransactionHistory.styled';
 
 // utils
@@ -27,11 +28,11 @@ function TransactionTable({ items }) {
       {items.map(item => {
         return (
           <TransactionHistory key={item.id}>
-            <HeaderLine>
+            <TransactionLine>
               <TransactionValue>{normalizeType(item.type)}</TransactionValue>
               <TransactionValue>{item.amount}</TransactionValue>
               <TransactionValue>{item.currency}</TransactionValue>
-            </HeaderLine>
+            </TransactionLine>
           </TransactionHistory>
         );
       })}
