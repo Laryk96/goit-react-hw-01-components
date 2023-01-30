@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 // utils
-import { getColorByFlag } from '../../utils';
+import { getColorByFlag } from 'utils';
 
 const Container = styled.ul``;
 

@@ -1,11 +1,11 @@
 // Data
-import user from '../../user.json';
-import statsData from '../../Statistics.json';
-import friedsData from '../../FriendList.json';
-import transactions from '../../transactions.json';
+import user from 'data/user.json';
+import statsData from 'data/Statistics.json';
+import friedsData from 'data/FriendList.json';
+import transactions from 'data/transactions.json';
 
 // style Component
-import { Container } from '../App/App.styled';
+import { Container } from './App.styled';
 
 // Components
 import Profile from 'components/Profile/Profile';

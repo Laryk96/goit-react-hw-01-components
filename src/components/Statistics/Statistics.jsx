@@ -11,7 +11,7 @@ import {
 } from './Statistics.styled';
 
 // Utils
-import { getRandomHexColor } from '../../utils';
+import { getRandomHexColor } from 'utils';
 
 function Statistics({ title, stats }) {
   return (

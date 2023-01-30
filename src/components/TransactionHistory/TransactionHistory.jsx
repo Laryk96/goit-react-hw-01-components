@@ -12,7 +12,7 @@ import {
 } from './TransactionHistory.styled';
 
 // utils
-import { normalizeType } from '../../utils';
+import { normalizeType } from 'utils';
 
 function TransactionTable({ items }) {
   return (
