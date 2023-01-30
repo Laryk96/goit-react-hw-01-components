@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 // style Component
 import {
@@ -7,14 +7,12 @@ import {
   FriendImage,
   FriendName,
   Status,
-} from "./FriendList.styled";
+} from './FriendList.styled';
 
 function FriendList({ friends }) {
   return (
     <Container>
-      {friends.map((friend) => {
-        const { avatar, name, isOnline, id } = friend;
-
+      {friends.map(({ avatar, name, isOnline, id }) => {
         return (
           <FriendListItem key={id}>
             <Status backgroundColor={isOnline}></Status>

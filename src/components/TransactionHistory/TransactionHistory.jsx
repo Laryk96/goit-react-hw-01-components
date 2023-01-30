@@ -25,13 +25,13 @@ function TransactionTable({ items }) {
         </HeaderLine>
       </Header>
 
-      {items.map(item => {
+      {items.map(({ id, type, amount, currency }) => {
         return (
-          <TransactionHistory key={item.id}>
+          <TransactionHistory key={id}>
             <TransactionLine>
-              <TransactionValue>{normalizeType(item.type)}</TransactionValue>
-              <TransactionValue>{item.amount}</TransactionValue>
-              <TransactionValue>{item.currency}</TransactionValue>
+              <TransactionValue>{normalizeType(type)}</TransactionValue>
+              <TransactionValue>{amount}</TransactionValue>
+              <TransactionValue>{currency}</TransactionValue>
             </TransactionLine>
           </TransactionHistory>
         );

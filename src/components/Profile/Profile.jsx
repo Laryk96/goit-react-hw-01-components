@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 // style Component
 import {
@@ -10,17 +10,15 @@ import {
   StatsList,
   Stats,
   Label,
-} from "./Profile.styled";
+} from './Profile.styled';
 
-function Profile(props) {
-  const {
-    username,
-    tag,
-    location,
-    avatar,
-    stats: { followers, views, likes },
-  } = props;
-
+function Profile({
+  username,
+  tag,
+  location,
+  avatar,
+  stats: { followers, views, likes },
+}) {
   return (
     <UserCard>
       <Description>

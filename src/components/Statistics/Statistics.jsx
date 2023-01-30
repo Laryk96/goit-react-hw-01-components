@@ -19,9 +19,7 @@ function Statistics({ title, stats }) {
       {title && <Title>{title}</Title>}
 
       <StatList>
-        {stats.map(stat => {
-          const { id, label, percentage } = stat;
-
+        {stats.map(({ id, label, percentage }) => {
           return (
             <StatItem key={id} backgroundColor={getRandomHexColor()}>
               <StatLabel>{label}</StatLabel>

@@ -12,3 +12,21 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </ThemeProvider>
   </React.StrictMode>
 );
+console.log('geoooo');
+
+localStorage.setItem('Name', 'Mango');
+console.log([1, 23, 34, 124, 15, 13123123]);
+console.log({
+  name: 'mango',
+  age: 20,
+  local: {
+    city: 'kiev',
+    adress: 'Petrovka',
+  },
+  getId() {
+    console.log(10);
+
+    console.log(this);
+    return 21;
+  },
+});
