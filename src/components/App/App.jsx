@@ -1,7 +1,7 @@
 // Data
 import user from 'data/user.json';
-import statsData from 'data/Statistics.json';
-import friedsData from 'data/FriendList.json';
+import statsData from 'data/statistics.json';
+import friedsData from 'data/friendList.json';
 import transactions from 'data/transactions.json';
 
 // style Component
